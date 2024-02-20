@@ -34,5 +34,5 @@ USER mailhog
 # Set the working directory for the MailHog user
 WORKDIR /home/mailhog
 
-# Run MailHog
-CMD ["MailHog"]
+# Run MailHog with grep filtering for KEEPALIVE
+CMD ["/bin/sh", "-c", "MailHog | grep -v KEEPALIVE"]
