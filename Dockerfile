@@ -31,7 +31,7 @@ RUN adduser -D -u 1000 mailhog
 # Switch to the MailHog user
 USER mailhog
 
-# Set the working directory for the MailHog user
+
 WORKDIR /home/mailhog
 
 # Run MailHog with custom host and port
