@@ -34,5 +34,5 @@ USER mailhog
 # Set the working directory for the MailHog user
 WORKDIR /home/mailhog
 
-# Run MailHog with grep filtering for KEEPALIVE
-CMD ["/bin/sh", "-c", "MailHog | grep -v KEEPALIVE"]
+# Run MailHog with custom host and port
+CMD ["MailHog", "-api-bind-addr", "0.0.0.0:8025", "-ui-bind-addr", "0.0.0.0:8025"]
