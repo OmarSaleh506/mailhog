@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "0.0.0.0:1025:1025"
+      - "0.0.0.0:8025:8025"
