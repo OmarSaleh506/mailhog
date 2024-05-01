@@ -4,5 +4,5 @@ services:
   mailhog:
     image: mailhog/mailhog
     ports:
-      - "0.0.0.0:1025:1025"
-      - "0.0.0.0:8025:8025"
+      - "1025:1025"
+      - "8025:8025"
